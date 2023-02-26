@@ -4,7 +4,8 @@
   "description": "A datav components library",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup -wc rollup.config.dev.js"
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "rollup -c rollup.config.dev.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/donglize521521/datav-components-library#readme",
   "devDependencies": {
-    "rollup": "^2.16.1"
+    "@babel/preset-env": "^7.20.2",
+    "rollup": "^2.16.1",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "sam-test-data": "0.0.5"
   }
 }
