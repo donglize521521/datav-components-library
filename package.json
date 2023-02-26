@@ -4,7 +4,7 @@
   "description": "A datav components library",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup -c rollup.config.dev.js"
+    "dev": "rollup -wc rollup.config.dev.js"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,3 @@
-console.log('hellow imooc datav!')
+console.log('hellow imooc datav!！')
 
 export default {}
