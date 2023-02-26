@@ -1,0 +1,20 @@
+{
+  "name": "datav-components-library",
+  "version": "1.0.0",
+  "description": "A datav components library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donglize521521/datav-components-library.git"
+  },
+  "keywords": [],
+  "author": "donglize <1486252015@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donglize521521/datav-components-library/issues"
+  },
+  "homepage": "https://github.com/donglize521521/datav-components-library#readme"
+}
