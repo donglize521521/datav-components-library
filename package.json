@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/donglize521521/datav-components-library/issues"
   },
-  "homepage": "https://github.com/donglize521521/datav-components-library#readme"
+  "homepage": "https://github.com/donglize521521/datav-components-library#readme",
+  "devDependencies": {
+    "rollup": "^2.16.1"
+  }
 }
