@@ -1,2 +1,5 @@
+import * as data  from './plugin'
 
-export default random
+console.log(data.default.random())
+
+export default data.default.random
