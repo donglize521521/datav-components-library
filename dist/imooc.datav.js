@@ -1,11 +1,15 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('sam-test-data')) :
-	typeof define === 'function' && define.amd ? define(['sam-test-data'], factory) :
-	(global = global || self, global.imoocDatav = factory(global.samTestData));
-}(this, (function (samTestData) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global = global || self, global.imoocDatav = factory());
+}(this, (function () { 'use strict';
 
-	console.log(samTestData.random(100));
+	const a = 1;
 
-	return samTestData.random;
+	var cjs = a;
+
+	console.log(cjs);
+
+	return cjs;
 
 })));

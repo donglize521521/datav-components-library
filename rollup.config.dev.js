@@ -1,5 +1,7 @@
 const path = require('path');
 const resolve = require('rollup-plugin-node-resolve');
+import commonjs from 'rollup-plugin-commonjs';
+
 
 const inputPath = path.resolve(__dirname, './src/index.js');
 const outputUmdPath = path.resolve(__dirname, './dist/imooc.datav.js');
@@ -17,7 +19,8 @@ module.exports = {
     format:'es'
   }],
   plugins: [
-    resolve()
+    resolve(),
+    commonjs()
   ],
-  external: ['sam-test-data']  
+  external: ['vue']  
 }
