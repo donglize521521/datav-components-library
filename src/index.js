@@ -1,5 +1,5 @@
-import * as data  from './plugin'
+import { random } from './plugin'
 
-console.log(data.default.random())
+console.log(random)
 
-export default data.default.random
+export default random

@@ -1,11 +1,7 @@
-const a = 1;
-const b = 2;
-function random(){
+export const a = 1;
+export const b = 2;
+export function random(){
   console.log('random')
 }
 
-export default {
-  a,
-  b,
-  random
-}
+export default {}

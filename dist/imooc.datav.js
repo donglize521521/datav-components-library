@@ -4,22 +4,12 @@
   (global = global || self, global.imoocDatav = factory());
 }(this, (function () { 'use strict';
 
-  const a = 1;
-  const b = 2;
   function random(){
     console.log('random');
   }
 
-  var plugin = {
-    a,
-    b,
-    random
-  };
+  console.log(random);
 
-  console.log(plugin.random());
-
-  var index = plugin.random;
-
-  return index;
+  return random;
 
 })));
