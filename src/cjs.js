@@ -1,3 +1,7 @@
-const a = 1
+exports.a = 1;
+exports.b = 2;
 
-module.exports = a
+// module.exports = {
+//   a,
+//   b
+// }

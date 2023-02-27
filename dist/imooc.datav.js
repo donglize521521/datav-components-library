@@ -4,12 +4,10 @@
 	(global = global || self, global.imoocDatav = factory());
 }(this, (function () { 'use strict';
 
-	const a = 1;
+	var a = 1;
 
-	var cjs = a;
+	console.log(a);
 
-	console.log(cjs);
-
-	return cjs;
+	return a;
 
 })));
