@@ -2,6 +2,7 @@ const path = require('path');
 const resolve = require('rollup-plugin-node-resolve');
 import commonjs from 'rollup-plugin-commonjs';
 const babel = require('rollup-plugin-babel');
+import json from 'rollup-plugin-json'
 
 
 const inputPath = path.resolve(__dirname, './src/index.js');
@@ -24,7 +25,8 @@ module.exports = {
     commonjs(),
     babel({
        exclude: 'node_moudles/**' 
-    })
+    }),
+    json()
   ],
   external: ['vue']  
 }
