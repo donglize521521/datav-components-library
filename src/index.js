@@ -1,12 +1,5 @@
-import { a, b } from './cjs'
-import pkg from '../package.json'
+import Test from './Test.vue'
 
-console.log(pkg)
-
-console.log(a)
-
-const c = () =>{
-  return 3;
+export default function(Vue) {
+  Vue.component(Test.name,Test)
 }
-
-export default c

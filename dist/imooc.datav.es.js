@@ -1,1 +1,56 @@
-var o={name:"datav-components-library",version:"1.0.0",description:"A datav components library",main:"index.js",scripts:{dev:"rollup -wc rollup.config.dev.js",build:"rollup -c rollup.config.dev.js","build:prod":"rollup -c rollup.config.prod.js"},repository:{type:"git",url:"git+https://github.com/donglize521521/datav-components-library.git"},keywords:[],author:"donglize <1486252015@qq.com>",license:"ISC",bugs:{url:"https://github.com/donglize521521/datav-components-library/issues"},homepage:"https://github.com/donglize521521/datav-components-library#readme",devDependencies:{"@babel/preset-env":"^7.20.2",rollup:"^2.16.1","rollup-plugin-babel":"^4.4.0","rollup-plugin-commonjs":"^10.1.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-terser":"^7.0.2"},dependencies:{"@babel/core":"^7.21.0","sam-test-data":"0.0.5"}};console.log(o),console.log(1);export default function(){return 3}
+import { openBlock, createElementBlock, toDisplayString } from 'vue';
+
+var script = {
+  name: 'TestComponent',
+  setup: function setup() {
+    var message = 'hello world!';
+    return {
+      message: message
+    };
+  }
+};
+
+var _hoisted_1 = {
+  "class": "test"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1, toDisplayString($setup.message), 1 /* TEXT */);
+}
+
+function styleInject(css, ref) {
+  if (ref === void 0) ref = {};
+  var insertAt = ref.insertAt;
+  if (!css || typeof document === 'undefined') {
+    return;
+  }
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css_248z = ".test[data-v-07bdddea] {\n  color: red;\n}";
+styleInject(css_248z);
+
+script.render = render;
+script.__scopeId = "data-v-07bdddea";
+script.__file = "src/Test.vue";
+
+function index (Vue) {
+  Vue.component(script.name, script);
+}
+
+export default index;
