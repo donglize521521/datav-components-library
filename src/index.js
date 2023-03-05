@@ -1,5 +1,9 @@
-import { a } from './cjs'
+import { a, b } from './cjs'
 
 console.log(a)
 
-export default a
+const c = () =>{
+  return 3;
+}
+
+export default c

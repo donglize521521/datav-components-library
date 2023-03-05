@@ -1,6 +1,7 @@
 const path = require('path');
 const resolve = require('rollup-plugin-node-resolve');
 import commonjs from 'rollup-plugin-commonjs';
+const babel = require('rollup-plugin-babel');
 
 
 const inputPath = path.resolve(__dirname, './src/index.js');
@@ -20,7 +21,10 @@ module.exports = {
   }],
   plugins: [
     resolve(),
-    commonjs()
+    commonjs(),
+    babel({
+       exclude: 'node_moudles/**' 
+    })
   ],
   external: ['vue']  
 }
